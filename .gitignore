@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+
+# Never commit secrets / env files (none belong in this static site)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p8
+*.p12
+*.keystore
+*.jks
+GoogleService-Info.plist
+google-services.json
+serviceAccount*.json
+*credentials*
+secrets*
+
+# Editor / OS noise
+.vscode/
+.idea/
+*.swp
+*~
