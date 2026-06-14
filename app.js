@@ -406,10 +406,10 @@
         var squadMode = b.dataset.mode === 'squad';
         if (squad) squad.classList.toggle('show', squadMode);
         if (typeField) typeField.value = squadMode ? 'Squad' : 'Solo';
-        if (submitBtn) submitBtn.textContent = squadMode ? 'Reserve our spots' : 'Claim my spot';
+        if (submitBtn) submitBtn.textContent = squadMode ? 'Apply as a squad' : 'Apply to beta test';
         if (note) note.textContent = squadMode
-          ? "Add your crew — we'll save your whole group a spot."
-          : "One email when StakeUp is ready. That's it.";
+          ? "Add your crew — we'll save your whole group a beta spot."
+          : "One email with your beta invite. That's it.";
       });
     });
   });

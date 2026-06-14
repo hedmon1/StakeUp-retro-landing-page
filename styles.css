@@ -126,6 +126,8 @@ header.scrolled{box-shadow:0 6px 0 rgba(0,0,0,.4)}
 .btn-lime{background:var(--lime);color:var(--ink)}
 .btn-cyan{background:var(--cyan);color:var(--ink)}
 .btn-lg{padding:16px 22px;font-size:13px}
+/* nav CTA shows full label on desktop; a short "Apply" on mobile so it never overflows */
+.nav-cta .cta-short{display:none}
 
 /* ───────── HERO ───────── */
 .hero{padding:54px 0 60px;position:relative}
@@ -538,6 +540,14 @@ footer{border-top:4px solid var(--ink);padding:44px 0 56px;background:var(--bg2)
 @media(max-width:680px){
   body{font-size:19px}
   .nav-links{display:none}
+
+  /* Header: keep the brand + CTA button inside the frame (no overflow / uneven edge) */
+  .nav{height:62px}
+  .brand{font-size:15px;gap:9px}
+  .mark{width:36px;height:36px}
+  .nav .btn{font-size:10px;padding:10px 13px;box-shadow:3px 3px 0 var(--ink)}
+  .nav-cta .cta-full{display:none}
+  .nav-cta .cta-short{display:inline}
   .features{grid-template-columns:1fr}
   .steps{grid-template-columns:1fr}
   .signup-row{flex-direction:column}
